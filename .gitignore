@@ -32,3 +32,42 @@ web/sites/default/files/js/js_iwEP7USkHD605VRLL7P4xo-DBsFhB8vyH6z1EPr_2IM.js.gz
 web/core/modules/system/tests/fixtures/HtaccessTest/access_test.module.bak
 web/core/modules/system/tests/fixtures/HtaccessTest/access_test.php.bak
 web/modules/contrib/simple_sitemap/modules/simple_sitemap_engines/tests/src/Kernel/SubmitSitemapTest.php.bak
+
+# Diretórios padrão do Drupal que não devem ser versionados
+/web/sites/*/files
+/web/sites/*/private
+/web/sites/*/settings.local.php
+/web/sites/*/services.local.yml
+
+# Ignora caches temporários e pastas do Twig
+/web/sites/*/files/php
+/web/sites/*/files/js
+/web/sites/*/files/css
+
+# Ignora configurações locais do ambiente
+/web/sites/default/settings.local.php
+/web/sites/default/services.local.yml
+/web/sites/default/files/
+
+/vendor/
+/core/
+/node_modules/
+
+# Ignora arquivos do Composer que são gerados
+/composer.lock
+/vendor/
+/autoload.php
+
+# Ignora IDEs e editores
+*.sublime-workspace
+*.sublime-project
+*.idea/
+*.vscode/
+.DS_Store
+Thumbs.db
+
+# Ignora backups ou arquivos temporários
+*.bak
+*.swp
+*.orig
+*.log
